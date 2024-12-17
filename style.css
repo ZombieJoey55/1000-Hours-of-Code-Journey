@@ -1,0 +1,87 @@
+/* Add a gray background color with some padding */
+body {
+    font-family: Arial;
+    padding: 20px;
+    background: #E7E9EB;
+  }
+
+  /* Div defaults */
+div{
+    padding: 1em;
+    text-align: center;
+    background: white;
+    margin-bottom: 20px;
+}
+
+  /* Header/Blog Title */
+.header {
+    font-size: 30px;
+}
+
+/* Learning Title */
+.total.hours{
+    font-size: 30px;
+}
+
+
+/* Roadmap */
+.roadmap{
+    text-align: left;
+    padding-left: 30px;
+}
+.roadmap > h3{
+    font-size: 30px; 
+}
+
+.roadmap > ul{
+    font-size: 18px;
+    padding-left: 20px
+}
+
+/* weeky log */
+
+.week > h3{
+    text-align: center;
+}
+
+.week span{
+    font-size: 30px;
+}
+
+.log{
+    text-align: left;
+}
+
+.weekly{
+    text-align:center
+}
+
+.first{
+    list-style-position: inside;
+    text-align:center;
+    padding-left: 0px;
+}
+
+.completed{
+    list-style-type: "\2714 ";
+    color:green;
+    text-decoration: line-through;
+}
+
+.greyweekly{
+    margin: 0;
+    padding: 1px;
+    background-color: #f1f1f1;
+}
+
+.greyweekly > h4{
+    font-size: 18px;
+    margin-bottom: 0;
+}
+
+.log > h4{
+    font-size: 16px;
+    padding-left: 20px
+}
+
+
