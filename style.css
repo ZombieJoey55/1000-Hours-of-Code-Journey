@@ -1,3 +1,9 @@
+  /* Div defaults */
+    /* padding: 1em;
+    text-align: center;
+    background: white;
+    margin-bottom: 20px */
+
 /* Add a gray background color with some padding */
 body {
     font-family: Arial;
@@ -5,37 +11,63 @@ body {
     background: #E7E9EB;
   }
 
-  /* Div defaults */
-div{
+  /* Header/Blog Title */
+.header {
+    font-size: 30px;
     padding: 1em;
     text-align: center;
     background: white;
     margin-bottom: 20px;
 }
 
-  /* Header/Blog Title */
-.header {
-    font-size: 30px;
-}
-
 /* Learning Title */
 .total.hours{
     font-size: 30px;
+    padding: 1em;
+    text-align: center;
+    background: white;
+    margin-bottom: 20px;
 }
 
-
 /* Roadmap */
+.phraseheading{
+    text-align: center;
+    font-size: 25px; 
+    margin: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.rulelist > li{
+    padding-bottom: 10px;
+}
+
 .roadmap{
     text-align: left;
     padding-left: 30px;
+    padding: 1em;
+    background: white;
+    margin-bottom: 20px;
 }
 .roadmap > h3{
     font-size: 30px; 
+    text-align: center
 }
 
 .roadmap > ul{
     font-size: 18px;
     padding-left: 20px
+}
+
+.roadmap > ol{
+    font-size: 18px;
+    padding-left: 20px
+}
+
+.phrase{
+    background-color: #f1f1f1;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 /* weeky log */
@@ -50,10 +82,13 @@ div{
 
 .log{
     text-align: left;
+    padding: 1em;
+    background: white;
+    margin-bottom: 20px;
 }
 
 .weekly{
-    text-align:center
+    text-align:center;
 }
 
 .first{
