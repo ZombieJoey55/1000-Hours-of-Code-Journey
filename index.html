@@ -5,40 +5,59 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Learning Log</title>
+  <link rel="stylesheet" href="./style.css">
+
+  <!-- //link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
   <header>
     <h1>Learning Blog - My 1000 Hour Coding Journey</h1>
+    <hr>
   </header>
-  <hr>
 
   <!-- Intro -->
   <main>
-    <section>
-      <h2>Total Hours Learning: 420/1000</h2>
-      <hr>
-      <p>380 hours already completed</p>
-      <p>"1000 hours: The perfect balance of practice and persistence to turn coding basics into mastery."</p>
+    <section class="intro">
+      <div>
+        <h2>Total Hours Learning: 431/1000</h2>
+        <hr>
+      </div>
+      <div>
+        <p>380 hours already completed</p>
+        <p>"1000 hours: The perfect balance of practice and persistence to turn coding basics into mastery."</p>
+      </div>
     </section>
 
     <!-- Study Plan -->
-    <section>
-      <h2>Study Plan</h2>
-      <hr>
+    <section class="study">
+      <div>
+        <h2>Study Plan</h2>
+        <hr>
+      </div>
       <p>To avoid rushing through the course and falling into "tutorial hell," I created a structured study plan that
         allows me to apply my skills effectively while also working on capstone projects throughout the course, which I
         will use to demonstrate my expertise and build a portfolio.</p>
-      <h3>Monday 3rd March – 13th June</h3>
+      <!-- Main Study Block  -->
+      <h3>Monday 3rd March – 18th May</h3>
       <h4>On-Going</h4>
       <ul>
         <li>Project: Learning Blog (Every Section)</li>
       </ul>
+      <!-- Study Block One -->
+      <h3 class="done">Block One (One Week): Monday 3rd March – Sunday 9th March - Done</h3>
       <h4>HTML</h4>
       <ul>
-        <li>Udemy: Colt Steele - Section 1 – 5 (HTML) - Done</li>
-        <li>Project: HTML Project</li>
+        <li class="done">Udemy: Colt Steele - Section 1 – 5 (HTML) - Done</li>
+        <li class="done">Project: HTML Project - Done</li>
       </ul>
+      <!-- Study Block Two -->
+      <h3>Block Two (Two Weeks): Monday 24th March – Sunday 6th April</h3>
       <h4>CSS</h4>
       <ul>
         <li>Udemy: Colt Steele - Section 6 – 11 (CSS)</li>
@@ -49,6 +68,8 @@
       <ul>
         <li>Udemy: Colt Steele - Section 12 – 13 (Bootstrap)</li>
       </ul>
+      <!-- Study Block Two -->
+      <h3>Block Three (Two Weeks): Monday 24th March – Sunday 6th April</h3>
       <h4>JavaScript</h4>
       <ul>
         <li>
@@ -63,11 +84,16 @@
         <li>Udemy: Colt Steele - Section 27 – 29 (JavaScript: API)</li>
         <li>Project: API Integration + Async/Await Project</li>
       </ul>
+      <h3></h3>
+      <!-- Study Block Four -->
+      <h3>Block Four (Two Weeks): Monday 7th April – Sunday 20th April</h3>
       <h4>Back-End</h4>
       <ul>
         <li>Udemy: Colt Steele - Section 30 – 38 (Backend)</li>
         <li>Project: Backend (Node.js + Express + MongoDB)</li>
       </ul>
+      <!-- Study Block Five -->
+      <h3>Block Five (Two Weeks): Monday 21st April – Sunday 4th May</h3>
       <h4>YelpCamp</h4>
       <ul>
         <li>
@@ -77,6 +103,8 @@
           </ul>
         </li>
       </ul>
+      <!-- Study Block Six -->
+      <h3>Block Six (Two Weeks): Monday 5th May – Sunday 18th May</h3>
       <h4>React</h4>
       <ul>
         <li>Udemy: Colt Steele - Section 60 – 75 (React)</li>
@@ -85,10 +113,13 @@
     </section>
 
     <!-- Progress Blog -->
-    <section>
+    <div>
       <h2>Progress Blog</h2>
       <hr>
+    </div>
+    <article class="progress">
       <!-- Day 1 -->
+      <p class="note">Week 1</p>
       <h3>Day 1: Monday 3rd March - 10 hours (390/1000)</h3>
       <ul>
         <li>
@@ -108,9 +139,10 @@
         <li>Created Learning Log</li>
         </li>
       </ul>
-    </section>
+    </article class="progress">
     <!-- Day 2 -->
-    <section>
+    <p class="note">Week 1</p>
+    <article class="progress">
       <h3>Day 2: Tuesday 4th March - 8 hours (398/1000)</h3>
       <ul>
         <li>
@@ -135,9 +167,10 @@
         </li>
         </li>
       </ul>
-    </section>
+    </article class="progress">
     <!-- Day 3 -->
-    <section>
+    <p class="note">Week 1</p>
+    <article class="progress">
       <h3>Day 3: Wednesday 5th March - 8 hours (406/1000)</h3>
       <ul>
         <li>
@@ -157,9 +190,10 @@
         </li>
         </li>
       </ul>
-    </section>
-    <!-- Day 3 -->
-    <section>
+    </article class="progress">
+    <!-- Day 4 -->
+    <article class="progress">
+      <p class="note">Week 1</p>
       <h3>Day 4: Thursday 6th March - 14 hours (420/1000)</h3>
       <ul>
         <li>Completed HTML Project, elements including:
@@ -173,7 +207,41 @@
           </ul>
         </li>
       </ul>
-    </section>
+    </article>
+  </main>
+  <!-- Day 5 - 7 -->
+  <p class="note">Week 1</p>
+  <article class="progress">
+    <h3>Day 5 - Day 7: Thursday 6th March - Sunday 8th March OFF</h3>
+  </article>
+  <p class="note">Week 2</p>
+  <article class="progress">
+    <h3>Day 8: Monday 10th March - 11 hours (431/1000)</h3>
+    <ul>
+      <li>Completed Udemy Section 6 and 7
+        <ul>
+          <li>CSS Basics</li>
+          <li>Color Properties</li>
+          <li>Font Size/Family</li>
+          <li>Selectors</li>
+          <li>Pseduo Classes/Elements</li>
+          <li>CSS Specificity</li>
+        </ul>
+      </li>
+      <li>Updated Learning Log
+        <ul>
+          <li>Added CSS
+            <ul>
+              <li>Added Font and Background Colors</li>
+              <li>Added Text Decoration</li>
+              <li>Added custom Font</li>
+            </ul>
+          </li>
+          <li>Added Study Plan</li>
+        </ul>
+      </li>
+    </ul>
+  </article>
   </main>
   <!-- footer -->
   <footer>

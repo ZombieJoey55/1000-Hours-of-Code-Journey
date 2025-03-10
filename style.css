@@ -1,0 +1,62 @@
+/* Color Palette */
+/* Primary	#1E293B (Dark Blue-Gray)	Navbar, Headers, Buttons
+Secondary	#3B82F6 (Bright Blue)	Links, Hover Effects, Highlights
+Accent	#FACC15 (Vibrant Yellow)	Important Buttons, CTAs
+Background (Main)	#F3F4F6 (Soft Light Gray)	Main Page Background
+Background (Alt)	#E2E8F0 (Darker Light Gray)	Sections, Cards, Code Blocks
+Text	#0F172A (Deep Navy)	Primary Text
+Text (Muted)	#64748B (Gray-Blue)	Secondary Text (Captions, Notes)
+Color Palette */
+
+
+/* Body */
+body{
+    background-color: #F3F4F6;
+    font-family: "inter", Arial, sans-serif;
+    color: #0F172A;
+}
+
+/* Headers */
+h1, h2, h3, h4, h5, h6{
+    color: #1E293B;
+}
+
+div:has(h2) {
+    background-color: #E2E8F0;
+}
+
+/* Main Header */
+header{
+    background-color: #1E293B;
+}
+
+h1{
+    color: #F3F4F6;
+}
+
+/* intro */
+.intro div:has(h2){
+    background-color: #3B82F6;
+}
+
+.intro > div{
+    background-color: #64748B;
+}
+
+/* Study Plan */
+.study h3{
+    text-decoration: 2px underline;
+}
+
+.study .done{
+    text-decoration: line-through;
+}
+
+.note{
+    color: #64748B;
+}
+
+/* footer */
+footer{
+    background-color: #E2E8F0;
+}
