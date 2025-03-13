@@ -4,46 +4,168 @@ Secondary	#3B82F6 (Bright Blue)	Links, Hover Effects, Highlights
 Accent	#FACC15 (Vibrant Yellow)	Important Buttons, CTAs
 Background (Main)	#F3F4F6 (Soft Light Gray)	Main Page Background
 Background (Alt)	#E2E8F0 (Darker Light Gray)	Sections, Cards, Code Blocks
+Background (Alt) #1D4ED8 (Virbant Blue) Nav
+Background (Card) #DBEAFE
 Text	#0F172A (Deep Navy)	Primary Text
 Text (Muted)	#64748B (Gray-Blue)	Secondary Text (Captions, Notes)
 Color Palette */
 
 
+
+
 /* Body */
 body{
-    background-color: #F3F4F6;
+    background-color: #E2E8F0;
     font-family: "inter", Arial, sans-serif;
     color: #0F172A;
+    margin: 0;
+    padding: 0;
+}
+
+.fixed{
+    position: fixed; /* Stays at the top */
+    top: 0; /* Aligns to the very top */
+    left: 0;
+    width: 100%; /* Full width */
+    z-index: 1000; /* Ensures it stays above other elements */
+}
+
+p{
+    margin: 0;
 }
 
 /* Headers */
 h1, h2, h3, h4, h5, h6{
     color: #1E293B;
+    margin: 0;
 }
 
-div:has(h2) {
+.sub-heading {
     background-color: #E2E8F0;
+    padding: 1rem;
+    border-bottom: 2px solid #1E293B;
+    border-left: 10px solid #1E293B;
+    margin-top: 16px
 }
+
+/* General */
+.card{
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin: 16px 0;
+}
+
+.info{
+    background-color: #DBEAFE;
+    border-left: 3px solid #1D4ED8;
+}
+
+.completed{
+    background-color: #DCFCE7;
+    border-left: 3px solid #15803D;
+}
+
+.on-going{
+    background-color: #FEF9C3;
+    border-left: 3px solid #EAB308;
+}
+
+.todo{
+    background-color: #FEE2E2;
+    border-left: 3px solid #DC2626;
+}
+
 
 /* Main Header */
-header{
-    background-color: #1E293B;
+/* Header container */
+header.main-header {
+    background-color: #0F172A;
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center;
+    padding: 1rem;
 }
 
-h1{
+/* Header styling */
+h1 {
     color: #F3F4F6;
+    margin: 0; 
+    font-weight: 100;
+    font-size: 2.5rem;
+}
+
+/* nav */
+/* Navbar container */
+.nav-bar{
+    background-color: #1D4ED8;
+    display: flex;
+    justify-content: center; /* Space between logo & links */
+    align-items: center; /* Vertically align items */
+}
+/* Navbar links container */
+.nav-links{
+    list-style: none;
+    display: flex;
+    gap: 2rem; /* Space between links */
+}
+/* Navbar links */
+.nav-links li {
+    display: inline;
+}
+/* Link styling */
+.nav-bar a {
+    color: #F3F4F6;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    text-decoration: none;
+}
+
+/* Main Container */
+main{
+    width: 50%;
+    margin: 0 auto;
+    background-color:#F3F4F6;
+    padding: 1rem 3rem;
 }
 
 /* intro */
-.intro div:has(h2){
-    background-color: #3B82F6;
+/* Intro container */
+.intro{
+    background-color: #1E293B;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers horizontally */
+    align-items: center;
+    padding: 0.5rem;
+    margin: 0;
+    padding-top: 150px;
+    max-width: 100%;
+}
+/* intro text styling */
+.intro > p{
+    color: #E2E8F0;
+    margin: 0;
+    padding: 0.5rem;
 }
 
-.intro > div{
-    background-color: #64748B;
+.intro > p:nth-of-type(1){
+   font-weight: bold;
+   font-size: 1.5rem;
 }
+
+.intro > p:nth-of-type(2){
+    font-weight: 100;
+    font-size: 1rem;
+ }
 
 /* Study Plan */
+.study{
+    border-bottom: 5px solid #1E293B;
+    margin-bottom: 32px;
+}
 .study h3{
     text-decoration: 2px underline;
 }
@@ -54,9 +176,18 @@ h1{
 
 .note{
     color: #64748B;
+    margin: 16px;
 }
 
 /* footer */
 footer{
-    background-color: #E2E8F0;
+    background-color: #0F172A;
+    color: #F3F4F6;
+    margin: 0;
+    padding: 0;
+}
+
+footer p{
+    margin: 0;
+    padding: 1rem
 }

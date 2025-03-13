@@ -16,107 +16,128 @@
 </head>
 
 <body>
-  <header>
-    <h1>Learning Blog - My 1000 Hour Coding Journey</h1>
-    <hr>
-  </header>
+  <div class="fixed">
+    <!-- Header -->
+    <header class="main-header">
+      <h1>Learning Blog</h1>
+    </header>
+
+    <!-- Nav Bar -->
+    <nav class="nav-bar">
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- Intro -->
+  <section class="intro">
+    <p>My 1000 Hour Coding Journey - 447/1000</p>
+    <p>380 hours already completed</p>
+    <p>"1000 hours: The perfect balance of practice and persistence to turn coding basics into mastery."</p>
+  </section>
+
 
   <!-- Intro -->
   <main>
-    <section class="intro">
-      <div>
-        <h2>Total Hours Learning: 447/1000</h2>
-        <hr>
-      </div>
-      <div>
-        <p>380 hours already completed</p>
-        <p>"1000 hours: The perfect balance of practice and persistence to turn coding basics into mastery."</p>
-      </div>
-    </section>
-
     <!-- Study Plan -->
     <section class="study">
-      <div>
+      <header class="sub-heading">
         <h2>Study Plan</h2>
-        <hr>
-      </div>
-      <p>To avoid rushing through the course and falling into "tutorial hell," I created a structured study plan that
+      </header>
+      <p class="info card">To avoid rushing through the course and falling into "tutorial hell," I created a structured
+        study plan that
         allows me to apply my skills effectively while also working on capstone projects throughout the course, which I
         will use to demonstrate my expertise and build a portfolio.</p>
       <!-- Main Study Block  -->
-      <h3>Monday 3rd March – 18th May</h3>
-      <h4>On-Going</h4>
-      <ul>
-        <li>Project: Learning Blog (Every Section)</li>
-      </ul>
+      <section class="on-going card">
+        <h3>Monday 3rd March – 18th May</h3>
+        <h4>On-Going</h4>
+        <ul>
+          <li>Project: Learning Blog (Every Section)</li>
+        </ul>
+      </section>
       <!-- Study Block One -->
-      <h3 class="done">Block One (One Week): Monday 3rd March – Sunday 9th March - Done</h3>
-      <h4>HTML</h4>
-      <ul>
-        <li class="done">Udemy: Colt Steele - Section 1 – 5 (HTML) - Done</li>
-        <li class="done">Project: HTML Project - Done</li>
-      </ul>
+      <section class="completed card">
+        <h3 class="done">Block One (One Week): Monday 3rd March – Sunday 9th March - Done</h3>
+        <h4 class="done">HTML</h4>
+        <ul>
+          <li class="done">Udemy: Colt Steele - Section 1 – 5 (HTML) - Done</li>
+          <li class="done">Project: HTML Project - Done</li>
+        </ul>
+      </section>
       <!-- Study Block Two -->
-      <h3>Block Two (Two Weeks): Monday 24th March – Sunday 6th April</h3>
-      <h4>CSS</h4>
-      <ul>
-        <li>Udemy: Colt Steele - Section 6 – 11 (CSS)</li>
-        <li>YouTube: Colt Steele – Gird Course</li>
-        <li>Project: CSS Project</li>
-      </ul>
-      <h4>Bootstrap</h4>
-      <ul>
-        <li>Udemy: Colt Steele - Section 12 – 13 (Bootstrap)</li>
-      </ul>
-      <!-- Study Block Two -->
-      <h3>Block Three (Two Weeks): Monday 24th March – Sunday 6th April</h3>
-      <h4>JavaScript</h4>
-      <ul>
-        <li>
-          Udemy: Colt Steele - Section 14 – 23 (JavaScript)
-          <ul>
-            <li>JavaScript ChatGPT challenges after every section</li>
-          </ul>
-        </li>
-        <li>Codewars: Get to 5 Kyu</li>
-        <li>Udemy: Colt Steele - Section 24 – 26 (JavaScript: DOM)</li>
-        <li>Project: DOM Project</li>
-        <li>Udemy: Colt Steele - Section 27 – 29 (JavaScript: API)</li>
-        <li>Project: API Integration + Async/Await Project</li>
-      </ul>
-      <h3></h3>
+      <section class="todo card">
+        <h3>Block Two (Two Weeks): Monday 24th March – Sunday 6th April</h3>
+        <h4>CSS</h4>
+        <ul>
+          <li>Udemy: Colt Steele - Section 6 – 11 (CSS)</li>
+          <li>YouTube: Colt Steele – Gird Course</li>
+          <li>Project: CSS Project</li>
+        </ul>
+        <h4>Bootstrap</h4>
+        <ul>
+          <li>Udemy: Colt Steele - Section 12 – 13 (Bootstrap)</li>
+        </ul>
+      </section>
+      <!-- Study Block Three -->
+      <section class="todo card">
+        <h3>Block Three (Two Weeks): Monday 24th March – Sunday 6th April</h3>
+        <h4>JavaScript</h4>
+        <ul>
+          <li>
+            Udemy: Colt Steele - Section 14 – 23 (JavaScript)
+            <ul>
+              <li>JavaScript ChatGPT challenges after every section</li>
+            </ul>
+          </li>
+          <li>Codewars: Get to 5 Kyu</li>
+          <li>Udemy: Colt Steele - Section 24 – 26 (JavaScript: DOM)</li>
+          <li>Project: DOM Project</li>
+          <li>Udemy: Colt Steele - Section 27 – 29 (JavaScript: API)</li>
+          <li>Project: API Integration + Async/Await Project</li>
+        </ul>
+        <h3></h3>
+      </section>
       <!-- Study Block Four -->
-      <h3>Block Four (Two Weeks): Monday 7th April – Sunday 20th April</h3>
-      <h4>Back-End</h4>
-      <ul>
-        <li>Udemy: Colt Steele - Section 30 – 38 (Backend)</li>
-        <li>Project: Backend (Node.js + Express + MongoDB)</li>
-      </ul>
+      <section class="todo card">
+        <h3>Block Four (Two Weeks): Monday 7th April – Sunday 20th April</h3>
+        <h4>Back-End</h4>
+        <ul>
+          <li>Udemy: Colt Steele - Section 30 – 38 (Backend)</li>
+          <li>Project: Backend (Node.js + Express + MongoDB)</li>
+        </ul>
+      </section>
       <!-- Study Block Five -->
-      <h3>Block Five (Two Weeks): Monday 21st April – Sunday 4th May</h3>
-      <h4>YelpCamp</h4>
-      <ul>
-        <li>
-          Udemy: Colt Steele - Section 39 – 59 (YelpCamp)
-          <ul>
-            <li>Project: YelpCamp</li>
-          </ul>
-        </li>
-      </ul>
+      <section class="todo card">
+        <h3>Block Five (Two Weeks): Monday 21st April – Sunday 4th May</h3>
+        <h4>YelpCamp</h4>
+        <ul>
+          <li>
+            Udemy: Colt Steele - Section 39 – 59 (YelpCamp)
+            <ul>
+              <li>Project: YelpCamp</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
       <!-- Study Block Six -->
-      <h3>Block Six (Two Weeks): Monday 5th May – Sunday 18th May</h3>
-      <h4>React</h4>
-      <ul>
-        <li>Udemy: Colt Steele - Section 60 – 75 (React)</li>
-        <li>Project: React</li>
-      </ul>
+      <section class="todo card">
+        <h3>Block Six (Two Weeks): Monday 5th May – Sunday 18th May</h3>
+        <h4>React</h4>
+        <ul>
+          <li>Udemy: Colt Steele - Section 60 – 75 (React)</li>
+          <li>Project: React</li>
+        </ul>
+      </section>
     </section>
-
     <!-- Progress Blog -->
-    <div>
+    <header class="sub-heading">
       <h2>Progress Blog</h2>
-      <hr>
-    </div>
+    </header>
     <article class="progress">
       <!-- Day 1 -->
       <p class="note">Week 1</p>
@@ -208,78 +229,92 @@
         </li>
       </ul>
     </article>
-  </main>
-  <!-- Day 5 - 7 -->
-  <p class="note">Week 1</p>
-  <article class="progress">
-    <h3>Day 5 - Day 7: Thursday 6th March - Sunday 8th March OFF</h3>
-  </article>
-  <p class="note">Week 2</p>
-  <article class="progress">
-    <h3>Day 8: Monday 10th March - 11 hours (431/1000)</h3>
-    <ul>
-      <li>Completed Udemy Section 6 and 7
-        <ul>
-          <li>CSS Basics</li>
-          <li>Color Properties</li>
-          <li>Font Size/Family</li>
-          <li>Selectors</li>
-          <li>Pseduo Classes/Elements</li>
-          <li>CSS Specificity</li>
-        </ul>
-      </li>
-      <li>Updated Learning Log
-        <ul>
-          <li>Added CSS
-            <ul>
-              <li>Added Font and Background Colors</li>
-              <li>Added Text Decoration</li>
-              <li>Added custom Font</li>
-            </ul>
-          </li>
-          <li>Added Study Plan</li>
-        </ul>
-      </li>
-    </ul>
-  </article>
-  <p class="note">Week 2</p>
-  <article class="progress">
-    <h3>Day 9: Monday 11th March - 8 hours (439/1000)</h3>
-    <ul>
-      <li>Completed Udemy Section 8
-        <ul>
-          <li>Box Model
-            <ul>
-              <li>Width & Height</li>
-              <li>Border & Border-Radius</li>
-              <li>Padding</li>
-              <li>Margin</li>
-            </ul>
-          </li>
-          <li>Display Property</li>
-          <li>CSS Units: ems and rems</li>
-        </ul>
-      </li>
-      <li>Updated Learning Log
-      </li>
-    </ul>
-  </article>
-  <p class="note">Week 2</p>
-  <article class="progress">
-    <h3>Day 10: Tuesday 12th March - 8 hours (447/1000)</h3>
-    <ul>
-      <li>Completed Udemy Section 9
-        <ul>
-          <li>Opacity and the Alpha Channel</li>
-          <li>Position Property</li>
-          <li>CSS Transitions</li>
-          <li>CSS Transforms</li>
-        </ul>
-      </li>
-      <li>Updated Learning Log
-      </li>
-    </ul>
-  </article>
+    <!-- Day 5 - 7 -->
+    <p class="note">Week 1</p>
+    <article class="progress">
+      <h3>Day 5 - Day 7: Thursday 6th March - Sunday 8th March OFF</h3>
+    </article>
+    <p class="note">Week 2</p>
+    <article class="progress">
+      <h3>Day 8: Monday 10th March - 11 hours (431/1000)</h3>
+      <ul>
+        <li>Completed Udemy Section 6 and 7
+          <ul>
+            <li>CSS Basics</li>
+            <li>Color Properties</li>
+            <li>Font Size/Family</li>
+            <li>Selectors</li>
+            <li>Pseduo Classes/Elements</li>
+            <li>CSS Specificity</li>
+          </ul>
+        </li>
+        <li>Updated Learning Log
+          <ul>
+            <li>Added CSS
+              <ul>
+                <li>Added Font and Background Colors</li>
+                <li>Added Text Decoration</li>
+                <li>Added custom Font</li>
+              </ul>
+            </li>
+            <li>Added Study Plan</li>
+          </ul>
+        </li>
+      </ul>
+    </article>
+    <p class="note">Week 2</p>
+    <article class="progress">
+      <h3>Day 9: Monday 11th March - 8 hours (439/1000)</h3>
+      <ul>
+        <li>Completed Udemy Section 8
+          <ul>
+            <li>Box Model
+              <ul>
+                <li>Width & Height</li>
+                <li>Border & Border-Radius</li>
+                <li>Padding</li>
+                <li>Margin</li>
+              </ul>
+            </li>
+            <li>Display Property</li>
+            <li>CSS Units: ems and rems</li>
+          </ul>
+        </li>
+        <li>Updated Learning Log
+        </li>
+      </ul>
+    </article>
+    <p class="note">Week 2</p>
+    <article class="progress">
+      <h3>Day 10: Tuesday 12th March - 8 hours (447/1000)</h3>
+      <ul>
+        <li>Completed Udemy Section 9
+          <ul>
+            <li>Opacity and the Alpha Channel</li>
+            <li>Position Property</li>
+            <li>CSS Transitions</li>
+            <li>CSS Transforms</li>
+          </ul>
+        </li>
+        <li>Updated Learning Log
+        </li>
+      </ul>
+    </article>
+    <p class="note">Week 2</p>
+    <article class="progress">
+      <h3>Day 11: Wednesday 13th March - 8 hours (455/1000)</h3>
+      <ul>
+        <li>Updated Learning Log
+          <ul>
+            <li>Adjusted Margin And Padding For Better Spacing</li>
+            <li>Centered Elements Using Flexbox</li>
+            <li>Implemented Fixed Positioning For Key Elements</li>
+            <li>Converted Measurements To REM And EM Units For Scalability</li>
+            <li>Enhanced The Design Of The Learning Log With A Fresh Look</li>
+          </ul>
+        </li>
+      </ul>
+    </article>
   </main>
   <!-- footer -->
   <footer>
